@@ -1,0 +1,11 @@
+in client folder: $ docker build -f Dockerfile.dev -t tuantran/multi-client .
+in server folder: $ docker build -f Dockerfile.dev -t tuantran/multi-server .
+
+$ docker run -it -p 4003:5005 tuantran/multi-server
+$ docker run -it -p 4004:5005 tuantran/multi-client
+
+đang học ở 20:16
+https://www.youtube.com/watch?v=-pTel5FojAQ
+
+$ docker push tuantran/multi-client
+$ docker push tuantran/multi-server
